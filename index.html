@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Crystal Collector</title>
+</head>
+
+<body>
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h2 class="display-4">Crystal Collector</h2>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-body">
+            <h5 class="card-title">Rules to the Game</h5>
+            <p class="card-text">You will be given an random number</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Match this Number</h5>
+                    <p id="Comp-Random-Num"></p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 id="wins">Wins:</h5>
+                    <h5 id="Losses">Losses:</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-sm-8" role="group" aria-label="Basic example">
+        <button id="button"><img src="./assets/images/green.png" height=200px width=200px></button>
+        <button id="button"><img src="./assets/images/purple.png" height=200px width=200px></button>
+        <button id="button"><img src="./assets/images/teal.png" height=200px width=200px></button>
+        <button id="button"><img src="./assets/images/magenta.png" height=200px width=200px></button>
+    </div>
+
+    <div class="card">
+        <div id="Score-header">
+            Your Total Score
+        </div>
+        <div id="Player-Score">
+            <h3>100</h3>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+    <script src='./assets/javascript/game.js'></script>
+</body>
+
+</html>
