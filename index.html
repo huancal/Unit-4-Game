@@ -17,22 +17,25 @@
             <h2 class="display-4">Crystal Collector</h2>
         </div>
     </div>
-    <div class="card">
+    <div class="card ml-5 mr-5">
         <div class="card-body">
-            <h5 class="card-title">Rules to the Game</h5>
-            <p class="card-text">You will be given an random number</p>
+            <h5 class="card-title">Rules to the Game:</h5>
+            <p class="card-text">You will be given a random number</p>
+            <p class="card-text">You will be given a random number</p>
+            <p class="card-text">You will be given a random number</p>
+            <p class="card-text">You will be given a random number</p>
         </div>
     </div>
     <div class="row">
-        <div class="col-sm-6">
+        <div class="col-sm-3 mt-2 mb-2 ml-5">
             <div class="card">
                 <div class="card-body">
                     <h5 class="card-title">Match this Number</h5>
-                    <p id="Comp-Random-Num"></p>
+                    <h5 id="Comp-Random-Num"></h5>
                 </div>
             </div>
         </div>
-        <div class="col-sm-4">
+        <div class="col-sm-3 mt-2 mb-2">
             <div class="card">
                 <div class="card-body">
                     <h5 id="wins">Wins:</h5>
@@ -40,18 +43,19 @@
                 </div>
             </div>
         </div>
+        <div class="col-sm-3 mt-2 mb-2">
+            <div class="playersScore text-info mt-2 ml-5">
+                <h4>Total Crystals Collected:</h4>
+                <span id="finalScore"></span>
+            </div>
+        </div>
     </div>
 
-    <div class="col-sm-8" role="group" aria-label="Basic example">
-        <button id="button1"><img src="./assets/images/green.png" height=200px width=200px></button>
-        <button id="button2"><img src="./assets/images/purple.png" height=200px width=200px></button>
-        <button id="button3"><img src="./assets/images/teal.png" height=200px width=200px></button>
-        <button id="button4"><img src="./assets/images/magenta.png" height=200px width=200px></button>
-    </div>
-
-    <div class="playersScore text-info">
-        <h4>Total Gems Collected: </h4>
-        <span id="finalScore"></span>
+    <div class="col-sm-8 mr-2 ml-4 mb-5" role="group" aria-label="Basic example">
+        <button id="button1"><img src="./assets/images/green.png" height=170px width=170px></button>
+        <button id="button2"><img src="./assets/images/purple.png" height=170px width=170px></button>
+        <button id="button3"><img src="./assets/images/teal.png" height=170px width=170px></button>
+        <button id="button4"><img src="./assets/images/magenta.png" height=170px width=170px></button>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
