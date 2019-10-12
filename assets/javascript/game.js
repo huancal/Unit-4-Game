@@ -18,42 +18,38 @@ $(document).ready(function () {
 
     $('#button1').on('click', function () {
         playerscore += crystal_1;
-        $('#finalScore').append = playerscore
-        console.log('button1click', playerscore);
-        winscheck()
+        $('#finalScore').html(playerscore);
+        winscheck();
     });
 
     $('#button2').on('click', function () {
         playerscore += crystal_2;
-        $('#finalScore').html = playerscore
-        console.log('button1click', playerscore);
-        winscheck()
+        $('#finalScore').html(playerscore);
+        winscheck();
     });
 
     $('#button3').on('click', function () {
         playerscore += crystal_3;
-        $('#finalScore').html = playerscore
-        console.log('button1click', playerscore);
-        winscheck()
+        $('#finalScore').html(playerscore);
+        winscheck();
     });
 
     $('#button4').on('click', function () {
         playerscore += crystal_4;
-        $('#finalScore').html = playerscore
-        console.log('button1click', playerscore);
-        winscheck()
+        $('#finalScore').html(playerscore);
+        winscheck();
     });
 
     var winscheck = function () {
         if (targetScore === playerscore) {
             wins++
             $('#wins').text(("Wins: " + wins));
-            alert('Congrats You Won');
+            alert('Congrats You Won!');
             resetgame();
         } else if (playerscore > targetScore) {
             losses++
             $('#Losses').text(("Losses: " + losses));
-            alert('Sorry try again');
+            alert('Sorry Try Again!');
             resetgame();
         }
     };
@@ -64,6 +60,7 @@ $(document).ready(function () {
         crystal_2 = generate_random(1, 12);
         crystal_3 = generate_random(1, 12);
         crystal_4 = generate_random(1, 12);
+        playerscore = 0;
     }
 
 
