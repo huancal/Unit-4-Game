@@ -1,0 +1,93 @@
+* {
+    font-family: 'Patrick Hand', cursive;
+}
+
+
+
+body {
+    color: black;
+    background-color: #c8d6e5;
+
+}
+
+.container {
+    color: #9b59b6;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+
+.card-text,
+.card-title,
+.comp-Random-Num {
+    font-size: 18pt;
+}
+
+
+h4,
+.finalScore {
+    font-size: x-large;
+}
+
+.wins-body {
+    height: 15vh;
+}
+
+.jumbotron {
+    height: 25vh;
+}
+
+.button4 {
+    padding-left: 600px;
+}
+
+.playerScore {
+    background-color: #c8d6e5;
+}
+
+.card-body {
+    background-color: #00d2d3;
+    border-style: solid;
+    border-width: 1pt;
+}
+
+.Rules-body {
+    background-color: #78e08f;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-style: solid;
+    border-width: 1pt;
+
+}
+
+.wins-body {
+    background-color: #5f27cd;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-style: solid;
+    border-width: 1pt;
+
+}
+
+.score-body {
+    background-color: #9b59b6;
+    padding-left: 20px;
+    padding-top: 18px;
+    padding-bottom: 20px;
+    border-style: solid;
+    border-width: 1pt;
+    color: black;
+    height: 15vh;
+    margin-top: 10px;
+}
+
+.row2 {
+    margin-left: 280px;
+}
+
+.row {
+    margin-left: 10px;
+}

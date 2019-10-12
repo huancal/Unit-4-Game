@@ -8,22 +8,24 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Patrick+Hand&display=swap" rel="stylesheet">
     <title>Crystal Collector</title>
 </head>
 
 <body>
-    <div class="jumbotron jumbotron-fluid">
-        <div class="container">
-            <h2 class="display-4">Crystal Collector</h2>
-        </div>
+    <div class="container">
+        <h2 class="display-4">Crystal Collector</h2>
+    </div>
     </div>
     <div class="card ml-5 mr-5">
-        <div class="card-body">
+        <div class="Rules-body">
             <h5 class="card-title">Rules to the Game:</h5>
-            <p class="card-text">You will be given a random number</p>
-            <p class="card-text">You will be given a random number</p>
-            <p class="card-text">You will be given a random number</p>
-            <p class="card-text">You will be given a random number</p>
+            <p class="card-text">You will be given a random number at the start of each game.</p>
+            <p class="card-text">There are 4 crystals below. By clicking on a crystal you will add a specific amount to
+                your "total crystals collected" score.</p>
+            <p class="card-text">You win the game by matching your total score to the random number.</p>
+            <p class="card-text">The value of each crystal is hidden until you click on it. At the start of a new game
+                each crystal will auto generate a new value.</p>
         </div>
     </div>
     <div class="row">
@@ -37,26 +39,32 @@
         </div>
         <div class="col-sm-3 mt-2 mb-2">
             <div class="card">
-                <div class="card-body">
+                <div class="wins-body">
                     <h5 id="wins">Wins:</h5>
                     <h5 id="Losses">Losses:</h5>
                 </div>
             </div>
         </div>
-        <div class="col-sm-3 mt-2 mb-2">
-            <div class="playersScore text-info mt-2 ml-5">
-                <h4>Total Crystals Collected:</h4>
-                <span id="finalScore"></span>
+        <div class="col-sm-5 mb-2">
+            <div class="playersScore text-info mt-2">
+                <div class="score-body">
+                    <h4>Total Crystals Collected:</h4>
+                    <span id="finalScore"></span>
+                </div>
             </div>
         </div>
     </div>
 
-    <div class="col-sm-8 mr-2 ml-4 mb-5" role="group" aria-label="Basic example">
-        <button id="button1"><img src="./assets/images/green.png" height=170px width=170px></button>
-        <button id="button2"><img src="./assets/images/purple.png" height=170px width=170px></button>
-        <button id="button3"><img src="./assets/images/teal.png" height=170px width=170px></button>
-        <button id="button4"><img src="./assets/images/magenta.png" height=170px width=170px></button>
+    <div class="row2">
+        <div class="col-sm-9 mr-2 ml-4 mb-5" role="group" aria-label="Basic example">
+            <button id="button1"><img src="./assets/images/green.png" height=170px width=170px></button>
+            <button id="button2"><img src="./assets/images/purple.png" height=170px width=170px></button>
+            <button id="button3"><img src="./assets/images/teal.png" height=170px width=170px></button>
+            <button id="button4"><img src="./assets/images/magenta.png" height=170px width=170px></button>
+        </div>
+
     </div>
+
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
