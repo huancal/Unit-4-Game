@@ -51,6 +51,7 @@ $(document).ready(function () {
             $('#Losses').text(("Losses: " + losses));
             alert('Sorry Try Again!');
             resetgame();
+
         }
     };
 
@@ -58,11 +59,11 @@ $(document).ready(function () {
         targetScore = generate_random(19, 120);
         $('#Comp-Random-Num').text(targetScore);
         playerscore = 0;
+        $('#finalScore').html(playerscore) = 0;
         crystal_1 = generate_random(1, 12);
         crystal_2 = generate_random(1, 12);
         crystal_3 = generate_random(1, 12);
         crystal_4 = generate_random(1, 12);
-
     }
 
 
