@@ -3,14 +3,14 @@ $(document).ready(function () {
         return Math.floor(Math.random() * (max - min + 1)) + min;
     }
 
-    var targetScore = generate_random(19, 120);
+    var targetscore = generate_random(19, 120);
     var crystal_1 = generate_random(1, 12);
     var crystal_2 = generate_random(1, 12);
     var crystal_3 = generate_random(1, 12);
     var crystal_4 = generate_random(1, 12);
 
 
-    $('#Comp-Random-Num').text(targetScore);
+    $('#Comp-Random-Num').text(targetscore);
 
     var wins = 0;
     var losses = 0;
@@ -41,12 +41,12 @@ $(document).ready(function () {
     });
 
     var winscheck = function () {
-        if (targetScore === playerscore) {
+        if (targetscore === playerscore) {
             wins++
             $('#wins').text(("Wins: " + wins));
             alert('Congrats You Won!');
             resetgame();
-        } else if (playerscore > targetScore) {
+        } else if (playerscore > targetscore) {
             losses++
             $('#Losses').text(("Losses: " + losses));
             alert('Sorry Try Again!');
@@ -56,8 +56,8 @@ $(document).ready(function () {
     };
 
     var resetgame = function () {
-        targetScore = generate_random(19, 120);
-        $('#Comp-Random-Num').text(targetScore);
+        targetscore = generate_random(19, 120);
+        $('#Comp-Random-Num').text(targetscore);
         playerscore = 0;
         crystal_1 = generate_random(1, 12);
         crystal_2 = generate_random(1, 12);
